@@ -1,0 +1,36 @@
+From 3e5fbc566a3fb861b4f01e4b0c5e4f28b783bb7a Mon Sep 17 00:00:00 2001
+From: ChiaYen <kcygamil@gmail.com>
+Date: Fri, 5 Mar 2021 16:47:29 +0800
+Subject: [PATCH] enlarge font size
+
+---
+ Makefile | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 6da5345..722c631 100644
+--- a/Makefile
++++ b/Makefile
+@@ -10,14 +10,14 @@ PATH_DEFAULT_RIGHT ?= /storage/roms
+ ifeq ($(ODROIDGO), 1)
+ 	SCREENW := 480
+ 	SCREENH := 320
+-	FONTSIZE := 8
+-	HEADERH := 17
++	FONTSIZE := 11
++	HEADERH := 20
+ 	H_PADDING_TOP := 3
+-	FOOTERH := 13
++	FOOTERH := 16
+ 	F_PADDING_TOP := 1
+-	LINEH := 15
++	LINEH := 18
+ 	FONTTOUSE := $(RESDIR)/Fiery_Turk.ttf
+-	VIEWER_LINE_H := 13
++	VIEWER_LINE_H := 16
+ else
+ # todo detect resolution and set window to corrext size
+ 	SCREENW ?= 1920
+-- 
+2.30.1.windows.1
+
